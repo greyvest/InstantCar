@@ -61,7 +61,7 @@ function on_drop_car(e)
 end
 
 function on_exit_car(x)
-   if x.entity.get_driver() == nil and x.entity.name == "car" then
+   if x.entity.get_driver() == nil and x.entity.get_passenger() == nil and x.entity.name == "car" then
       local player = game.players[x.player_index]
       --give the player a replacement car
       player.insert{name="car", count = 1}
