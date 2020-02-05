@@ -68,7 +68,7 @@ function on_exit_car(x)
 
       --Get all the stuff out of the car
       local storageDic = x.entity.get_inventory(defines.inventory.car_trunk).get_contents()
-      local ammoDic = x.entity.get_inventory(defines.inventory.car_trunk).get_contents()
+      local ammoDic = x.entity.get_inventory(defines.inventory.car_ammo).get_contents()
       local fuelDic = x.entity.get_fuel_inventory().get_contents()
 
       for key,val in pairs(fuelDic) do
